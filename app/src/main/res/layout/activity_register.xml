@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_300">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/md_light_green_A100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view55">
+
+                    <TextView
+                        android:id="@+id/txtRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="Register"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="@dimen/font_title_size" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:theme="@style/AppTheme.greyAccent"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="@style/PSButton.Default.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start"
+                    android:text="Already Member? Login"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_body_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    style="@style/PSButton.Default.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start"
+                    android:text="Need Help ?"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_body_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSkip"
+                    style="@style/PSButton.Default.Borderless"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/skip"
+                    app:layout_constraintBottom_toTopOf="@+id/loginButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlRegister" />
+
+                <ImageView
+                    android:id="@+id/imageView98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lightbulb" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/view55"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView181">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/first_name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edtFname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView186" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/last_name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+                        <EditText
+                            android:id="@+id/edtLname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView187" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="Email"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/mobile"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edtMobile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_line_border"
+                                android:ems="10"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:textColor="@color/md_grey_600"
+                                android:textColorHint="@color/md_grey_400"
+                                android:textSize="@dimen/font_body_size"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlOTP"
+                                android:layout_width="100dp"
+                                android:layout_height="38dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/md_light_green_A100">
+
+                                <TextView
+                                    android:id="@+id/txtOTP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center"
+                                    android:text="@string/send_otp"
+                                    android:textColor="@color/md_grey_800" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/otp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtOTP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/gender"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <Spinner
+                            android:id="@+id/spinGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/spinner_background"
+                            android:entries="@array/gender"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/dob"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtDOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/address"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="textPostalAddress"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/landmark"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtLandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="textPostalAddress"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/state"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <Spinner
+                            android:id="@+id/spinState"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/city"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <Spinner
+                            android:id="@+id/spinCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/pincode"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <Spinner
+                            android:id="@+id/spinPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/spinner_background"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/emergency_contact_1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtMobile1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/relation1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtRelation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:id="@+id/txtMobile2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/emergency_contact_2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtMobile2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:id="@+id/txtRelation2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/relation2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtRelation2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:id="@+id/txtMobile3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/emergency_contact_3"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtMobile3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:id="@+id/txtRelation3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="@string/relation3"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_500"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+                        <EditText
+                            android:id="@+id/edtRelation3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/edittext_line_border"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <CheckBox
+                            android:id="@+id/chkTerm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/terms_amp_condition"
+                            android:textColor="@color/md_grey_600" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView181"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="start"
+                    android:text="@string/sign_up"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="@dimen/font_h6_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView98" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

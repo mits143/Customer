@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PSButton.Primary" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PSButton.LightGreenA100" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_light_green_A100</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PSButton.Default.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/md_grey_600</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PSButton.Blue600" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_blue_600</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PSButton.Green600" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_green_600</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PSButton.Yellow800" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_yellow_800</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/md_white_1000</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="AppTheme.greyAccent">
+        <item name="colorAccent">@color/md_grey_800</item> <!-- Whatever color you want-->
+    </style>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentBooking">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/colorAccent"
+        android:background="@color/md_grey_100"
+        app:tabMode="auto">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCurrentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Booking" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCancelledList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelled Booking" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History Booking" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

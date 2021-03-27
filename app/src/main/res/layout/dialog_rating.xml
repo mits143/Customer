@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+
+            <TextView
+                android:id="@+id/textView231"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="Title"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_body_size"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_line_border"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="Review"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size" />
+
+            <EditText
+                android:id="@+id/edtReview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_line_border"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:hint="Review"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_body_size" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

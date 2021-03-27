@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">CustomerApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="chat">Chat</string>
+    <string name="change_password">Change Password</string>
+    <string name="qr_code">QR Code</string>
+    <string name="submit">Submit</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="servicing_charts">Servicing Charts</string>
+    <string name="notification">Notifications</string>
+    <string name="two_wheeler">2 Wheeler</string>
+    <string name="four_wheeler">4 Wheeler</string>
+    <string name="heavy_vehicle">Heavy Vehicle</string>
+    <string name="select_vehicle_type">Select Vehicle Type</string>
+    <string name="driving_license">Driving License</string>
+    <string name="enter_vehicle_number">Enter Vehicle Number</string>
+    <string name="puc">PUC</string>
+    <string name="registeration_paper">Registeration Paper</string>
+    <string name="insurance">Insurance</string>
+    <string name="rating_entry">Rating Entry</string>
+    <string name="rating_list">Rating List</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="booking_Detail">Booking Detail</string>
+    <string name="forgot_pwd">Forgot Password</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="email_empty">Enter email_id</string>
+    <string name="invalid_email">Invalid eamil_id</string>
+    <string name="pwd_empty">Enter Password</string>
+    <string name="invalid_username_password">Invalid username or password</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="error">Please try again later</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="invalid_old_pwd">Invalid old password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="otp">OTP</string>
+    <string name="mobile">Mobile</string>
+    <string name="gender">Gender</string>
+    <string name="dob">D.O.B</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="emergency_contact_1">Emergency Contact 1</string>
+    <string name="emergency_contact_2">Emergency Contact 2</string>
+    <string name="emergency_contact_3">Emergency Contact 3</string>
+    <string name="skip">Skip</string>
+    <string name="terms_amp_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="fname_empty">First name cannot be empty</string>
+    <string name="lname_empty">Last name cannot be empty</string>
+    <string name="invalid_mobile">Invalid mobile number</string>
+    <string name="otp_empty">OTP cannot be empty</string>
+    <string name="dob_empty">D.O.B cannot be empty</string>
+    <string name="address_empty">Address cannot be empty</string>
+    <string name="landmark_empty">Landmark cannot be empty</string>
+    <string name="mobile1_empty">Mobile 1 cannot be empty</string>
+    <string name="mobile2_empty">Mobile 2 cannot be empty</string>
+    <string name="mobile3_empty">Mobile 3 cannot be empty</string>
+    <string name="relation1_empty">Relation 1 cannot be empty</string>
+    <string name="relation2_empty">Relation 2 cannot be empty</string>
+    <string name="relation3_empty">Relation 3 cannot be empty</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="order">Order</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="email">Email</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="edit">Edit</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="done">Done</string>
+    <string name="relation1">Relation 1</string>
+    <string name="relation2">Relation 2</string>
+    <string name="relation3">Relation 3</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="family_person_contact">Family Person Contact</string>
+    <string name="send_sms">Send Sms</string>
+    <string name="call">Call</string>
+    <string name="API_KEY">AIzaSyBdOsQepVi1ACdgm2l4FrCqT4GbNUs62tg</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="book_order">Book Order</string>
+    <string name="edit_vehicle">Edit Vehicle</string>
+    <string name="cust_name">Customer Name</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_brand">Vehicle Brand</string>
+    <string name="service_date">Service Date</string>
+    <string name="customer_mobile_number">Customer Mobile Number</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="labour_charges">Labour Charges</string>
+    <string name="service_charges">Service Charges</string>
+    <string name="servicing">Servicing</string>
+
+
+    <string name="EngineOil">Engine Oil</string>
+    <string name="zero">00</string>
+    <string name="Washing1">Washing</string>
+    <string name="Servicing">Servicing</string>
+    <string name="DCarbSpray">D.Carb Spray</string>
+    <string name="BatteryCharges">Battery Charges</string>
+    <string name="GearBoxOil">Gear Box Oil</string>
+    <string name="BatteryLinerRear">Battery Liner Rear</string>
+    <string name="BatteryLinerFront">Battery Liner Front</string>
+    <string name="TotalAmount">Total Amount</string>
+    <string name="AdditionalRepair">Additional Repair</string>
+    <string name="Switch">Switch</string>
+    <string name="ClutchPlate">Clutch Plate</string>
+    <string name="PressurePlate">Pressure Plate</string>
+    <string name="Cable">Cable</string>
+    <string name="Bulp">Bulb</string>
+    <string name="OilSeal">Oil Seal</string>
+    <string name="GreepCover">Greep Cover</string>
+    <string name="SeatCover">Seat Cover</string>
+    <string name="Spring">Spring</string>
+    <string name="Bearing">Bearing</string>
+    <string name="Filter1">Filter</string>
+    <string name="Packing">Packing</string>
+    <string name="Rubar">Rubber</string>
+    <string name="Gair">Gear</string>
+    <string name="Rabar">Rabar</string>
+    <string name="Labour">Labour</string>
+    <string name="ChainSpray">Chain Spray</string>
+    <string name="Assembly">Assembly</string>
+    <string name="Enterotherproblem1">Problem 1</string>
+    <string name="Enterotherproblem2">Problem 2</string>
+    <string name="Enterotherproblem3">Problem 3</string>
+    <string name="GrossTotalAmount">Gross Total Amount</string>
+    <string name="Sparkplug">Spark Plug</string>
+    <string name="zero1">00</string>
+    <string name="Out">Out</string>
+    <string name="rating">Rating</string>
+    <string name="give_rating">Give rating</string>
+    <string name="others">Others</string>
+
+
+    <string-array name="gender">
+        <item> Select Gender </item>
+        <item> Male </item>
+        <item> Female </item>
+    </string-array>
+
+    <string-array name="radius">
+        <item> Select Radius </item>
+        <item> 5 </item>
+        <item> 10 </item>
+        <item> 15 </item>
+        <item> 20 </item>
+    </string-array>
+
+    <string-array name="vehicle_type">
+        <item> Select Vehicle </item>
+        <item> 2 Wheeler </item>
+        <item> 4 Wheeler </item>
+    </string-array>
+
+    <string-array name="status">
+        <item> Select Status </item>
+        <item> Accepted By Garage </item>
+        <item> Rejected By Garage </item>
+    </string-array>
+
+</resources>
